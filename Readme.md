@@ -9,7 +9,6 @@ The **Technical Interview Assistant** is an AI-powered chatbot designed to strea
 - Generates tailored technical questions based on declared skills.
 - Conducts a natural, conversational technical assessment.
 - Maintains context for meaningful follow-up questions.
-- Securely handles candidate data in compliance with privacy standards.
 
 ## Installation Instructions
 
@@ -100,10 +99,6 @@ The application follows a modular architecture:
   - Manages interview stages.
   - Validates user inputs.
   - Generates technical questions based on the tech stack.
-- **Data Handling Layer**
-  - Securely stores candidate information.
-  - Implements anonymization techniques.
-  - Ensures GDPR compliance.
 
 ### Model Details
 - **Model**: Google Gemini 2.0 Flash
@@ -144,15 +139,11 @@ The system prompt defines the chatbot's role, responsibilities, and constraints.
 - **Problem**: Technical questions needed to be specific to the candidate's declared tech stack.
 - **Solution**: Created a specialized prompt that extracts the tech stack from the conversation and generates tailored questions with varying difficulty levels.
 
-### Challenge 3: Data Privacy Compliance
-- **Problem**: Handling candidate information required GDPR compliance.
-- **Solution**: Implemented **data anonymization techniques**, explicit **consent collection**, and **secure storage practices**. Added functionality to delete data upon request.
-
-### Challenge 4: Handling Unexpected Inputs
+### Challenge 3: Handling Unexpected Inputs
 - **Problem**: Candidates might provide unexpected or irrelevant responses.
 - **Solution**: Enhanced the system prompt with fallback mechanisms and added input validation to guide the conversation back on track while maintaining a natural flow.
 
-### Challenge 5: Balancing Structure and Naturalness
+### Challenge 4: Balancing Structure and Naturalness
 - **Problem**: The interview needed to follow a structured process while feeling conversational.
 - **Solution**: Designed prompts that guide the model to ask questions in a friendly, conversational tone while still following the required interview stages.
 
