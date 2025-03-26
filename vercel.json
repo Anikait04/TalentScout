@@ -1,0 +1,21 @@
+{
+    "version": 1,
+    "builds": [
+        {
+            "src": "app.py",
+            "use": "@vercel/python",
+            "config": {
+                "runtime": "python3.11"
+            }
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "app.py"
+        }
+    ],
+    "env": {
+        "GOOGLE_API_KEY": "@google_api_key"
+    }
+}
