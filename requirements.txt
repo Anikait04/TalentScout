@@ -1,0 +1,6 @@
+# requirements.txt
+langchain==0.1.0
+langchain-google-genai==0.0.5
+streamlit==1.29.0
+python-dotenv==1.0.0
+google-generativeai==0.3.1
