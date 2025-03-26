@@ -1,4 +1,4 @@
-# Technical Interview Assistant Chatbot
+# TalentScout
 
 ## Project Overview
 The **Technical Interview Assistant** is an AI-powered chatbot designed to streamline the preliminary technical interview process. Built with **LangChain** and **Google's Gemini 2.0 Flash model**, this application conducts structured conversations with candidates to gather their information and assess their technical skills.
